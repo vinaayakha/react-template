@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -272,4 +276,15 @@ button:focus-visible {
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
   background: grey;
   margin-bottom: 30px;
+}
+
+.image-parent {
+  display: flex;
+  width: calc(100vw - 120px);
+  height: calc(100vh - 220px);
+}
+
+.fullImage {
+  width: 70%;
+  height: 100%;
 }

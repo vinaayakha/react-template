@@ -1,0 +1,151 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+      extend: {
+        backgroundColor: {
+          "blue-500": "#3490dc",
+        },
+      },
+      screens: {
+        xxs: "320px",
+        xs: "360px",
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+        exl: "1700px",
+      },
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        primaryColor: "#332086",
+        secondaryColor: "#F4F2F9",
+        primaryHoverColor: "#544597",
+        secondaryHoverColor: "#E8E6F1",
+        "gray-light": "#d3dce6",
+        "app-border": "#D1D5DB",
+        "inactive-icon": "#94A3B8",
+        "app-heading": "#334155",
+        "app-text": "#64748b",
+        "app-description": "#7B889B",
+        "app-background": "#F9F8FD",
+        "app-container": "#ffffff",
+        "app-scrollbar": "#DEE4ED",
+        "app-table-row-hover": "#F9FAFB",
+        "app-border-2": "#D3D8E0",
+        "app-inactive-icon": "#94a3b8",
+        "app-active-icon": "#475569",
+        "app-tooltip-bg": "#0B2636CC",
+        "alert-info": "#3b82f6",
+        "alert-success": "#22c55e",
+        "alert-warning": "#facc15",
+        "alert-error": "#ef4444",
+        "alert-info-bg": "#eff6ff",
+        "alert-success-bg": "#f0fdf4",
+        "alert-warning-bg": "#fefce8",
+        "alert-error-bg": "#fef2f2",
+        "alert-info-text": "#2563eb",
+        "alert-success-text": "#16a34a",
+        "alert-warning-text": "#ca8a04",
+        "alert-error-text": "#dc2626",
+        indigo: {
+          800: "#3730A3",
+          600: "#332086",
+          500: "#544597",
+          400: "#818CF8",
+          300: "#E2E8F0",
+          100: "#E8E6F1",
+          50: "#F9F8FD",
+        },
+        white: "#ffffff",
+        blue: {
+          800: "#1E40AF",
+          400: "#60A5FA",
+          100: "#DBEAFE",
+          50: "#EFF6FF",
+        },
+        purple: {
+          800: "#5B21B6",
+          400: "#A78BFA",
+          100: "#EDE9FE",
+        },
+        pink: {
+          800: "#9D174D",
+          400: "#F472B6",
+          100: "#FCE7F3",
+        },
+        orange: "#ff7849",
+        green: {
+          800: "#065F46",
+          400: "#34D399",
+          100: "#D1FAE5",
+        },
+        red: {
+          800: "#991B1B",
+          400: "#F87171",
+          100: "#FEE2E2",
+        },
+        yellow: {
+          800: "#92400E",
+          400: "#FBBF24",
+          100: "#FEF3C7",
+        },
+        "gray-dark": "#273444",
+        gray: {
+          900: "#334155",
+          800: "#1F2937",
+          500: "#6B7280",
+          400: "#9CA3AF",
+          300: "#64748B",
+          200: "#E5E7EB",
+          100: "#F3F4F6",
+        },
+      },
+      boxShadow: {
+        "shadow-large":
+          "0px 4px 6px -4px rgba(0, 0, 0, 0.10), 0px 10px 15px -3px rgba(0, 0, 0, 0.10)",
+      },
+      fontFamily: {
+        sans: ["Graphik", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+      },
+      fontSize: {
+        xxs: ["10px", "12px"],
+        xs: ["12px", "16px"],
+        sm: ["14px", "20px"],
+        base: ["16px", "24px"],
+        lg: ["20px", "28px"],
+        xl: ["24px", "32px"],
+        "2xl": [
+          "1.5rem",
+          {
+            lineHeight: "2rem",
+            letterSpacing: "-0.01em",
+            fontWeight: "500",
+          },
+        ],
+        "3xl": [
+          "1.875rem",
+          {
+            lineHeight: "2.25rem",
+            letterSpacing: "-0.02em",
+            fontWeight: "700",
+          },
+        ],
+      },
+      extend: {
+        spacing: {
+          128: "32rem",
+          144: "36rem",
+        },
+        borderRadius: {
+          DEFAULT: "4px",
+          md: "6px",
+          "4xl": "2rem",
+          base: "4px",
+        },
+      },
+    }
+  };
+  

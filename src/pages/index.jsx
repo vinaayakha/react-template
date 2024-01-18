@@ -35,17 +35,15 @@ export default function Index() {
   };
 
   const [query, setQuery] = useState("");
-  const [options, setOptions] = useState({});
+  const [options, setOptions] = useState({ page: 1, per_page: 30 });
 
-  useEffect(() => {
-    console.log({ result, loading });
-  }, [result, loading]);
+  useEffect(() => {}, [result, loading]);
 
   return (
     <>
       <h4>Moonshot</h4>
       <div className="query-box">
-        <div class="inputGroup">
+        <div className="inputGroup">
           <input
             value={query}
             onChange={(e) => {
@@ -62,7 +60,19 @@ export default function Index() {
           Search
         </button>
       </div>
-      <ImageGallery result={result} />
+      <div className="p-2 m-2">
+
+      <ImageGallery
+        result={result}
+        reachedEnd={(e) => {
+          if (e) {
+            // this.props.fetchItems();
+            setOptions({ ...options, page: options.page + 1 });
+            fetchImage();
+          }
+        }}
+      />
+      </div>
     </>
   );
 }
